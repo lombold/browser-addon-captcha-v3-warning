@@ -1,0 +1,16 @@
+{
+  "name": "browser-addmon-captcha-v3-warning",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/webextension-polyfill": "^0.12.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "build": "bun run tsc",
+    "watch": "bun run tsc -- --watch"
+  }
+}

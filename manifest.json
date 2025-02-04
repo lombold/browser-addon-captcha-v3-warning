@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Captcha v3 Warning",
+  "version": "1.0",
+  "description": "Warns you when a website is using Google's reCAPTCHA v3",
+  "icons": {
+    "48": "public/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["borderify.js"]
+    }
+  ],
+  "permissions": ["storage", "activeTab"]
+}
