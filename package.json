@@ -4,13 +4,16 @@
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest",
-    "@types/webextension-polyfill": "^0.12.1"
+    "@types/webextension-polyfill": "^0.12.1",
+    "web-ext": "^8.3.0"
   },
   "peerDependencies": {
     "typescript": "^5.7.3"
   },
   "scripts": {
+    "start": "bun run web-ext run",
     "build": "bun run tsc",
-    "watch": "bun run tsc -- --watch"
+    "watch": "bun run tsc -- --watch",
+    "lint": "bun run web-ext lint"
   }
 }
