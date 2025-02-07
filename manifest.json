@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Captcha v3 Warning",
   "version": "1.0",
   "description": "Warns you when a website is using Google's reCAPTCHA v3",
@@ -16,5 +16,7 @@
       ]
     }
   ],
-  "permissions": ["storage", "activeTab"]
+  "permissions": [
+    "activeTab"
+  ]
 }

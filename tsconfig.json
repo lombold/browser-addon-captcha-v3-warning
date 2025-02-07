@@ -9,14 +9,11 @@
     // Enable latest features
     "lib": ["ESNext", "DOM"],
     "target": "ESNext",
-    "module": "ESNext",
-    "moduleDetection": "force",
+    "module": "none",
     "allowJs": false,
     "outDir": "dist",
     "rootDir": "src",
 
-    // Bundler mode
-    "moduleResolution": "bundler",
     "noEmit": false,
     "allowImportingTsExtensions": false,
     "verbatimModuleSyntax": false,
