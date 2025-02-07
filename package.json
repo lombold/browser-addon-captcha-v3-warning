@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "bun run web-ext run",
-    "build": "bun run web-ext build",
+    "build": "bun run web-ext build --overwrite-dest --ignore-files package.json bun.lockb .gitignore README.md tsconfig.json src test .idea",
     "watch": "bun run tsc -- --watch",
     "lint": "bun run web-ext lint"
   }

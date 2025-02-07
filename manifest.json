@@ -6,6 +6,11 @@
   "icons": {
     "48": "public/icon.png"
   },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{0194e1d8-9653-7237-9f4a-47a72f762ae5}"
+    }
+  },
   "content_scripts": [
     {
       "matches": [
