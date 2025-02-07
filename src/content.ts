@@ -1,3 +1,6 @@
+type WindowWithGrecaptcha = Window & typeof globalThis & { grecaptcha?: unknown };
+const windowWithGrecaptcha = window as WindowWithGrecaptcha;
+
 function run() {
     console.log("Content script is running");
     if (isRecaptchaRunning()) {
@@ -7,7 +10,7 @@ function run() {
 }
 
 function isRecaptchaRunning() {
-    return !!(<any>window).grecaptcha;
+    return !!windowWithGrecaptcha.grecaptcha;
 }
 
 function highlight() {
