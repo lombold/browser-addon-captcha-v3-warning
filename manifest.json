@@ -1,19 +1,22 @@
 {
   "manifest_version": 3,
-  "name": "Captcha v3 Warning",
+  "name": "Captcha Warning",
   "version": "1.0",
-  "description": "Warns you when a website is using Google's reCAPTCHA v3",
+  "description": "Warns you when a website is using captcha in the background",
   "icons": {
     "48": "public/icon.png"
   },
   "content_scripts": [
     {
       "matches": [
-        "*://cln.dev/*"
+        "*://*/*"
       ],
       "js": [
         "dist/content.js"
-      ]
+      ],
+      "run_at": "document_end",
+      "all_frames": true,
+      "world": "MAIN"
     }
   ],
   "permissions": [
